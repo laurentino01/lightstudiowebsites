@@ -1,6 +1,7 @@
 /* Code generated with AutoHTML Plugin for Figma */
 
 import Image from "next/image";
+import { ResponsiveMenu } from "./ResponsiveMenu";
 
 export interface INavbar1Props {}
 
@@ -18,6 +19,9 @@ export const Menu = ({ ...props }: INavbar1Props): JSX.Element => {
             width={139}
             height={40}
           />
+        </div>
+        <div className="flex md:hidden">
+          <ResponsiveMenu />
         </div>
         <nav className=" hidden bg-dark md:flex flex-row gap-8 items-center justify-center shrink-0 relative">
           <div className="flex flex-row gap-8 items-start justify-start shrink-0 relative overflow-hidden">

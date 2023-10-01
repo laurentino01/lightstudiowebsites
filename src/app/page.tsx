@@ -1,9 +1,11 @@
-import Image from "next/image";
+/* Code generated with AutoHTML Plugin for Figma */
 
-export default function Home() {
+export interface IHeader1Props {}
+
+export default function Home({ ...props }: IHeader1Props): JSX.Element {
   return (
-    <section>
-      <h1>teste vendo se atualiza</h1>
-    </section>
+    <div className="">
+      <h1>teste</h1>
+    </div>
   );
 }
