@@ -8,6 +8,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
+    fontSize: {
+      title: " clamp(2.625rem, 0.4821rem + 4.4643vw, 4.5rem)",
+      highlight: "clamp(1rem, 0.5714rem + 0.8929vw, 1.375rem)",
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
