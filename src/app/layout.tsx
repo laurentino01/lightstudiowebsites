@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Menu } from "../layouts/menu/Menu";
+import { DrawerLayout } from "@/layouts/drawer/DrawerLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br" style={{ overflowX: "hidden" }}>
       <body className={inter.className}>
-        <Menu />
-        {children}
+        <DrawerLayout>
+          {" "}
+          <Menu /> {children}
+        </DrawerLayout>
       </body>
     </html>
   );

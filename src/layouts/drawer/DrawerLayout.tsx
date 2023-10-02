@@ -1,22 +1,19 @@
-import Image from "next/image";
 import React from "react";
-import "./responsiveMenu.css";
+import "./drawermenu.css";
 
-export const ResponsiveMenu = () => {
+export interface IDrawerLayoutProps {
+  children: React.ReactNode;
+}
+
+export const DrawerLayout = ({ ...props }: IDrawerLayoutProps): JSX.Element => {
+  const isCheck = () => {};
+
   return (
     <div>
       <div className="drawer drawer-end">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          {/* Page content here */}
-          <label htmlFor="my-drawer" className=" drawer-button bg-dark ">
-            <Image
-              src="/icon-menu.svg"
-              alt="icone do menu"
-              width={40}
-              height={40}
-            />
-          </label>
+          {/* Page content here */ props.children}
         </div>
         <div className="drawer-side  " style={{ overflowY: "hidden" }}>
           <label

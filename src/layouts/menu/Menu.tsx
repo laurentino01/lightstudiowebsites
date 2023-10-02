@@ -1,11 +1,10 @@
 /* Code generated with AutoHTML Plugin for Figma */
 
 import Image from "next/image";
-import { ResponsiveMenu } from "./ResponsiveMenu";
 
-export interface INavbar1Props {}
+export interface IMenuProps {}
 
-export const Menu = ({ ...props }: INavbar1Props): JSX.Element => {
+export const Menu = ({ ...props }: IMenuProps): JSX.Element => {
   return (
     <header
       className="bg-dark mx-auto px-5 flex flex-col gap-0 items-center justify-center shrink-0  max-w-[1440px] h-[72px] relative overflow-hidden"
@@ -21,7 +20,15 @@ export const Menu = ({ ...props }: INavbar1Props): JSX.Element => {
           />
         </div>
         <div className="flex md:hidden">
-          <ResponsiveMenu />
+          <label htmlFor="my-drawer" className="drawer-button ">
+            <Image
+              className="drawer-button"
+              src="/icon-menu.svg"
+              alt="icone do menu"
+              width={40}
+              height={40}
+            />
+          </label>
         </div>
         <nav className=" hidden bg-dark md:flex flex-row gap-8 items-center justify-center shrink-0 relative">
           <div className="flex flex-row gap-8 items-start justify-start shrink-0 relative overflow-hidden">

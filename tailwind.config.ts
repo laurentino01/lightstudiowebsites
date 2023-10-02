@@ -12,7 +12,7 @@ const config: Config = {
       sans: ["Poppins", "sans-serif"],
     },
     fontSize: {
-      title: " clamp(2.625rem, 0.4821rem + 4.4643vw, 4.5rem)",
+      title: "  clamp(2rem, 1.2857rem + 3.5714vw, 4.5rem)",
       highlight: "clamp(1rem, 0.5714rem + 0.8929vw, 1.375rem)",
     },
     screens: {

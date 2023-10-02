@@ -6,8 +6,8 @@ export interface IHeader1Props {}
 
 export default function Home({ ...props }: IHeader1Props): JSX.Element {
   return (
-    <main className="bg-light pt-10 md:pt-0 px-10 flex items-center justify-center md:justify-between flex-wrap-reverse  shrink-0 mx-auto w-[100%] max-w-[1440px] md:h-[100vh]  ">
-      <section className="flex flex-col gap-6 items-start justify-center shrink-0 w-full md:w-[50%] md:min-w-[400px] relative">
+    <main className="bg-light pt-10  md:pt-0 px-10 flex items-center justify-center md:justify-between flex-wrap-reverse  shrink-0 mx-auto w-[100%] max-w-[1440px] md:h-[100vh]  ">
+      <section className="flex flex-col gap-6 items-start justify-center shrink-0 w-full md:w-[50%]  relative">
         <div className="flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
           <p
             className="tracking-[5px] lg:tracking-[10px] text-highlight"
@@ -38,7 +38,7 @@ export default function Home({ ...props }: IHeader1Props): JSX.Element {
         </div>
       </section>
 
-      <section className="md:w-[50%] w-full md:min-w-[400px] ">
+      <section className="md:block hidden md:w-[50%] w-full  ">
         <div>
           <Image
             src={"/hero-image.png"}
